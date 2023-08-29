@@ -8,18 +8,61 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <div class="hero-container">
-        <header>
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>Projetos</li>
-                    <li>Tecnologias</li>
-                    <li>Contato</li>
-                </ul>
-            </nav>
-        </header>
+    <div class="header">
+        <div class="checkbox-container">
+            <div class="checkbox-wrapper">
+                <input type="checkbox" id="toggle">
+                <label class="checkbox" for="toggle">
+                    <span class="trace"></span>
+                    <span class="trace"></span>
+                    <span class="trace"></span>
+                </label>
+                <div class="menu"></div>
+                <nav class="menu-itens">
+                    <ul>
+                        <li>
+                            <a href="#home" onclick="document.getElementById('toggle').checked=false">Home</a>
+                        </li>
+                        <li>
+                            <a href="#tecnologia" onclick="document.getElementById('toggle').checked=false">Tecnologias</a>
+                        </li>
+                        <li>
+                            <a href="#sobre" onclick="document.getElementById('toggle').checked=false">Sobre</a>
+                        </li>
+                        <li>
+                            <a href="#projetos" onclick="document.getElementById('toggle').checked=false">Projetos</a>
+                        </li>
+                    </ul>
 
+                    <div class="social-media-menu">
+                    
+                        <a href="https://www.linkedin.com/in/silvioaquino" target="_blank">
+                            <i class="fa-brands fa-linkedin-in" id="menui"></i>
+                        </a>
+                        <a href="https://github.com/silvioaquino" target="_blank">
+                            <i class="fa-brands fa-github" id="menui"></i>
+                        </a>
+                        <a href="https://www.instagram.com/silviosaquino/" target="_blank">
+                            <i class="fa-brands fa-instagram" id="menui"></i>
+                        </a>
+                        <a href="https://www.facebook.com/SilvioS.Aquino/" target="_blank">
+                            <i class="fa-brands fa-facebook" id="menui"></i>
+                        </a>
+                        <a href="tel:+5581987977517" target="_blank">
+                            <i class="fa-solid fa-phone" id="menui"></i>
+                        </a>
+                        <a href="https://wa.me/5581987977517?text=Ol%C3%A1+gostaria+de+falar+com+voc%C3%AA." target="_blank">
+                            <i class="fa-brands fa-whatsapp" id="menui"></i>
+                        </a>
+    
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="hero-container" id="home">
+         
         <h1>Procurando um desenvolvedor FullStack?</h1>
 
         <div class="profile-content">
@@ -64,7 +107,7 @@
     <div class="content-container">
         <div class="project-container">
             <div class="project-content">
-
+                <h1 id="tecnologia">Tecnologias</h1>
                 <div class="icons-container">
                     <img class="icon-item" src="./imagens/js.png" />
                     <img class="icon-item" src="./imagens/node.png"  />
@@ -72,7 +115,7 @@
                     <img class="icon-item" src="./imagens/CSS3.png" />
                     <img class="icon-item" src="./imagens/html.png" /> 
                 </div>
-
+                <h1 id="sobre">Sobre</h1>
                 <div class="position-container center">
                     <p class="profile-sinopse">
                         Oficial R2 do exército brasileiro, sempre engajado na transformação e evolução tecnológica. 
@@ -87,10 +130,88 @@
                         relacionados ao investimento público do governo colombiano.
                     </p>
                 </div>
-                
+                <h1 id="projetos">Projetos</h1>
                 <div class="position-container right">
                     <div class="project-card">
                         <image class="project-image" src="./imagens/batmanimage.jpeg" />
+                        <p class="project-text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen 
+                            book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+                            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                        </p>
+                    </div>
+                </div>
+
+                <div class="position-container left">
+                    <div class="project-card card-reverse">
+                        <image class="project-image image-reverse" src="./imagens/projectbg.jpg" />
+                        <p class="project-text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen 
+                            book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+                            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                        </p>
+                    </div>
+                </div>
+
+                <div class="position-container right">
+                    <div class="project-card">
+                        <image class="project-image" src="./imagens/wppimage.jpeg" />
+                        <p class="project-text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen 
+                            book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+                            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                        </p>
+                    </div>
+                </div>
+
+                <div class="position-container left">
+                    <div class="project-card card-reverse">
+                        <image class="project-image image-reverse" src="./imagens/projectbg.jpg" />
+                        <p class="project-text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen 
+                            book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+                            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                        </p>
+                    </div>
+                </div>
+
+                <div class="position-container right">
+                    <div class="project-card">
+                        <image class="project-image" src="./imagens/wppimage.jpeg" />
+                        <p class="project-text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen 
+                            book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+                            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                        </p>
+                    </div>
+                </div>
+
+                <div class="position-container left">
+                    <div class="project-card card-reverse">
+                        <image class="project-image image-reverse" src="./imagens/projectbg.jpg" />
+                        <p class="project-text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen 
+                            book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+                            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                        </p>
+                    </div>
+                </div>
+
+                <div class="position-container right">
+                    <div class="project-card">
+                        <image class="project-image" src="./imagens/wppimage.jpeg" />
                         <p class="project-text">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
