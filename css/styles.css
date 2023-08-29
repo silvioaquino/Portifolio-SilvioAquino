@@ -272,6 +272,10 @@ i:hover {
     height: 30px;
 }
 
+#pautorais {
+    color: gold;
+}
+
 /*---------------------------------------------*/
 
 /* Menu Hamburguer */
@@ -365,11 +369,13 @@ i:hover {
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 40px;
+    
 }
 
 .menu-itens a:hover {
     color: gold;
 }
+
 
 /* Animação Menu */
 
